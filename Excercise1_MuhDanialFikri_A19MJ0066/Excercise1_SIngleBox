@@ -1,0 +1,29 @@
+import bpy
+
+# Add a mesh cube to the scene
+bpy.ops.mesh.primitive_cube_add()
+
+# Get a reference to the newly created object
+box = bpy.context.active_object
+
+# Set the location of the box
+box.location = (0, 0, 0)
+
+# Set the dimensions of the box
+box.dimensions = (2, 2, 2)
+
+# Add a mesh plane to the scene
+bpy.ops.mesh.primitive_cube_add()
+
+# Get a reference to the newly created object
+lid = bpy.context.active_object
+
+# Set the location of the lid
+lid.location = (0, 0, 1)
+
+# Set the dimensions of the lid
+lid.dimensions = (2.2, 2.2, 0.2)
+
+# Set the name of the objects
+box.name = "Box"
+lid.name = "Lid"

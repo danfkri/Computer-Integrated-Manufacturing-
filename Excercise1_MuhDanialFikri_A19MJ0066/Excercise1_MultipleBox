@@ -1,0 +1,86 @@
+import bpy
+
+# Add a mesh cube to the scene
+bpy.ops.mesh.primitive_cube_add()
+
+# Get a reference to the newly created object
+box1 = bpy.context.active_object
+
+# Set the location of the box
+box1.location = (0, 0, 0)
+
+# Set the dimensions of the box
+box1.dimensions = (1, 1, 1)
+
+# Add a mesh cube to the scene
+bpy.ops.mesh.primitive_cube_add()
+
+# Get a reference to the newly created object
+lid1 = bpy.context.active_object
+
+# Set the location of the lid
+lid1.location = (0, 0, 0.5)
+
+# Set the dimensions of the lid
+lid1.dimensions = (1.2, 1.2, 0.1)
+
+# Set the name of the objects
+box1.name = "Box1"
+lid1.name = "Lid1"
+
+# Add a mesh cube to the scene
+bpy.ops.mesh.primitive_cube_add()
+
+# Get a reference to the newly created object
+box2 = bpy.context.active_object
+
+# Set the location of the box
+box2.location = (3, 0, 0)
+
+# Set the dimensions of the box
+box2.dimensions = (2, 2, 2)
+
+# Add a mesh cube to the scene
+bpy.ops.mesh.primitive_cube_add()
+
+# Get a reference to the newly created object
+lid2 = bpy.context.active_object
+
+# Set the location of the lid
+lid2.location = (3, 0, 1)
+
+# Set the dimensions of the lid
+lid2.dimensions = (2.2, 2.2, 0.2)
+
+# Set the name of the objects
+box2.name = "Box2"
+lid2.name = "Lid2"
+
+
+# Add a mesh cube to the scene
+bpy.ops.mesh.primitive_cube_add()
+
+# Get a reference to the newly created object
+box3 = bpy.context.active_object
+
+# Set the location of the box
+box3.location = (-3, 0, 0)
+
+# Set the dimensions of the box
+box3.dimensions = (3, 3, 3)
+
+# Add a mesh cube to the scene
+bpy.ops.mesh.primitive_cube_add()
+
+# Get a reference to the newly created object
+lid3 = bpy.context.active_object
+
+# Set the location of the lid
+lid3.location = (-3, 0, 1.5)
+
+# Set the dimensions of the lid
+lid3.dimensions = (3.2, 3.2, 0.2)
+
+# Set the name of the objects
+box3.name = "Box3"
+lid3.name = "Lid3"
